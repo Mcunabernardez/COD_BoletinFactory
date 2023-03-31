@@ -4,17 +4,11 @@ import java.util.Scanner;
 Instanciar diferentes tipos de transportes,
 en principio solo camión y bicicleta
 
-Métodos comunes:
-costeTotal(Integer cp) : Float
-Recibe el código postal
-Devuelve el coste
+En la tarea de Factory Transporte crea una rama nueva "barco".
 
-tipoEmbalaje(Float x, Float y, Float z, Float peso): Integer
-Recibe dimensiones y peso
-Devuelve tipo de embalaje (que es un entero)
-0 - palet
-1 - envoltorio cartón
-2 - caja de madera
+Añade que la Factory pueda también tener objetos de tipo Barco.
+
+Entrega el repositorio
  */
 public class Main {
     static Transporte transporte; //instanciamos un objeto estatico
