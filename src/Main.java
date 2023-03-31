@@ -16,7 +16,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner guardar = new Scanner(System.in); //generamos un scanner
 
-        System.out.println("Tipo de transporte: \n (1) CAMION \n (2) BICICLETA");
+        System.out.println("Tipo de transporte: \n (1) CAMION \n (2) BICICLETA \n (3) BARCO");
         int type = guardar.nextInt();
         System.out.println("Introducir CP");
         Integer cp = guardar.nextInt();
@@ -28,7 +28,6 @@ public class Main {
         Float y = guardar.nextFloat();
         System.out.println("Profundidad del producto");
         Float z = guardar.nextFloat();
-
         transporte = Factory.getTransporte(type); //igualamos el transporte instanciado para elegir con el factory que tipo de transporte será
 
         Integer embalaje = transporte.tipoEquipaje(x,y,z,peso); //pasamos los datos del paquete para elegir donde irán embalados
